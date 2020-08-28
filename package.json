@@ -1,0 +1,15 @@
+{
+  "name": "jul-api",
+  "version": "1.0.0",
+  "description": "Sharing wisdom from the great Julien Mari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.0",
+    "vercel": "^20.1.0"
+  }
+}

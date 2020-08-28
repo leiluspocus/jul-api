@@ -1,0 +1,7 @@
+{
+    "name": "jul-api",
+    "version": 2,
+    "env": {
+        "MONGODB_URI": "@mongodb-uri"
+    }
+}
