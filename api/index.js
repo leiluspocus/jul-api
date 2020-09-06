@@ -36,11 +36,11 @@ module.exports = async (req, res) => {
 	// Select the "quotes" collection from the database
 	const collection = await db.collection('quotes');
 
-	// Select the users collection from the database
-	const users = await collection.find({}).toArray();
+	// Select the quotes collection from the database
+	const quotes = await collection.find({}).toArray();
 
-	const randomInt = Math.ceil(Math.random() * (users.length - 1));
-	// Respond with a JSON string of all users in the collection
-	console.log(users[randomInt], randomInt, users.length);
-	res.status(200).json(users[randomInt]);
+	const randomInt = Math.ceil(Math.random() * (quotes.length - 1));
+	// Respond with a JSON string of rqndom quote in the collection
+	console.log(quotes[randomInt], randomInt, quotes.length);
+	res.status(200).json(quotes[randomInt]);
 };
